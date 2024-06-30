@@ -5,33 +5,41 @@
         </a>
     </div>
 
-    <!-- <div class="menu">
-        <div class="menu-item">
-            <div class="menu-icon">
-                <font-awesome-icon icon="fa-solid fa-house" />
-            </div>
-            <div class="menu-text">
-                <nav>
-                    <router-link to="/">Student Activities</router-link>
-                </nav>
-            </div>
-        </div>
-    </div> -->
-
     <nav>
         <router-link to="/">
-            <font-awesome-icon icon="fa-solid fa-house" />Student Activities
+            <span class="bi bi-calendar-event" style="font-size: 1rem;"></span>
+            Student Activities
         </router-link>
         
-        <router-link to="/department">Student Organization</router-link>
-        <router-link to="/scholarship">Scholarship Programs</router-link>
-        <router-link to="/assistantship">Student Assistantship</router-link>
-        <router-link to="/discipline">Student Discipline</router-link>
-        <router-link to="/account">Account</router-link>
+        <router-link to="/department">
+            <span class="bi bi-people-fill" style="font-size: 1rem;"></span>
+            Student Organization
+        </router-link>
+
+        <router-link to="/scholarship">
+            <span class="bi bi-mortarboard-fill" style="font-size: 1rem;"></span>
+            Scholarship Programs
+        </router-link>
+
+        <router-link to="/assistantship">
+            <span class="bi bi-award-fill" style="font-size: 1rem;"></span>
+            Student Assistantship
+        </router-link>
+
+        <router-link to="/discipline">
+            <span class="bi bi-file-person" style="font-size: 1rem;"></span>
+            Student Discipline
+        </router-link>
+
+        <router-link to="/account">
+            <span class="bi bi-person-circle" style="font-size: 1rem;"></span>
+            Account
+        </router-link>
     </nav>
 </template>
 
 <script>
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default {
     name: 'SidebarComponent',
@@ -42,8 +50,27 @@ export default {
 <style scoped>
 .logo {
     width: 90%;
-    height: 90%;
-    object-fit: contain;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+nav a {
+  font-weight:600 ;
+  color: #262729;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a.router-link-exact-active {
+  color: #198754;
+}
+
+span {
+    margin-right: 10px;
 }
 
 </style>

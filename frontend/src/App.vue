@@ -20,23 +20,6 @@ main {
   overflow-y: auto;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #262729;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-nav a.router-link-exact-active {
-  color: #1cbdcf;
-}
-
 /* Input Field Styles */
 input[type="text"],
 input[type="email"],

@@ -1,12 +1,15 @@
 <template>
   <div class="header">
     <div class="title">
-      <h2>Student Activities</h2>
+      <h3>Student Activities</h3>
       <p>S.Y. 2024-2025</p>
     </div>
-    <!-- v-if student assistant -->
-    <button>Add Event</button>
+    <!-- v-if student officer -->
+    <router-link to="/add-event">
+      <button>Add Event</button>
+    </router-link>
     
+
     <!-- v-else walang button -->
   </div>
   <div id='calendar'></div>

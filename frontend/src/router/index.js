@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LoginView from '../views/LoginView.vue'
 import ActivitiesView from '../views/ActivitiesView.vue'
+import AddEvent from '../components/Student/Activities/AddEvent.vue'
 
 const routes = [
   {
@@ -14,6 +15,11 @@ const routes = [
     component: ActivitiesView,
     // meta: {requiresAuth: true}
   },
+  {
+    path: '/add-event',
+    name: 'Add Event',
+    component: AddEvent
+  }
 
 ]
 
