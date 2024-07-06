@@ -1,16 +1,16 @@
 <template>
     <div class="container">
-        <LoginComponent></LoginComponent>
+        <LoginStudent></LoginStudent>
     </div>
 </template>
 
 <script>
-import LoginComponent from '@/components/LoginComponent.vue'
+import LoginStudent from '@/components/Student/LoginStudent.vue'
 
 export default {
     name: 'LoginView',
     components: {
-        LoginComponent
+        LoginStudent
     }
 }
 
